@@ -1,0 +1,942 @@
+
+.fade-in-title {
+
+}
+
+.section {
+    background-color: white;
+    font-family: 'DejaVu Sans Mono', Monospace;
+    padding-left: 7vh;
+    padding-right: 7vh;
+}
+
+.title-page {
+    background-color: white;
+    font-family: 'DejaVu Sans Mono', Monospace;
+    margin: 0;
+    padding: 0;
+}
+
+#intro-text {
+    text-align: left;
+    color: #333;
+    margin-bottom: 36px;
+    margin-top: 20px;
+}
+
+#intro-text img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.title-center {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.subtitle-center {
+    margin-top: 30px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.shoutouts {
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.sources {
+    font-weight: bold;
+}
+
+.tiktok-embed {
+    transform: scale(0.85)
+}
+
+.button-group {
+    text-align: center;
+}
+
+.button {
+    margin-top: 50px;
+    padding: 30px 60px;
+    pointer-events: auto;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-text {
+    margin-top: 90px;
+    font-size: 48px;
+}
+
+.slider-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#yesButton {
+    background-color: #00f2ea;
+    color: black;
+    width: 40px;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+#noButton {
+    background-color: #ff0050;
+    color: white;
+    width: 40px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#displayType {
+    margin-top: 20px;
+}
+
+.showTopArtistsButton{
+    font-size: 20px;
+    pointer-events: auto;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff0050;
+    color: white;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.transition {
+    padding: 70px;
+    margin: 50px;
+}
+
+.faceplotbuttonContainer {
+    margin-left: 180px;
+    margin-top: 10px;
+}
+
+.yes-button:hover, #yesButton:hover,
+.no-button:hover, #noButton:hover {
+    background-color: #555;
+}
+
+#button-box {
+    z-index: 2;
+}
+
+#button-box.hide {
+    display: none;
+}
+.button-selected {
+    background-color: #00f2ea;
+    color: black;
+    cursor: pointer;
+}
+
+
+.track-names {
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.faceplotbuttonContainer {
+    display: flex;
+    align-items: center;
+}
+
+#tiktokLogo, #spotifyLogo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.pianoTextInit {
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.pianoWhiteKey {
+    fill: white;
+}
+
+.pianoKey:hover {
+    fill: #ff0050;
+    cursor: pointer;
+}
+
+
+#tiktok-slider {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#spotify-slider {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    color: #00f2ea;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slider-label {
+    position: relative;
+    width: 41%;
+    margin: auto;
+}
+
+.slider-label-right, .slider-label-left {
+    position: absolute;
+}
+
+ .slider-label-left {
+    left: 0;
+}
+.slider-label-right{
+    right: 0;
+}
+
+.tiktok-slider .noUi-connect {
+    background: #ff0050;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: lightgray;
+    padding: 8px;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.column-container {
+    display: flex;
+}
+
+#bubble-chart {
+    position: relative;
+}
+
+.cluster-label {
+    font-size: 21px;
+    fill: #333;
+}
+
+.rectangle {
+    margin-bottom: 20px;
+    padding: 80px;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    border: 3px solid black;
+    line-height: 1.2;
+}
+
+.text-container {
+    text-align: center;
+    padding: 50px;
+
+}
+
+.rectangle{
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+
+.column-left {
+    width: 450px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.column {
+    flex: 1;
+    width: 400px;
+}
+
+.column-page2 {
+    flex: 1;
+    width: 200px;
+}
+
+.tiktok-title h1 {
+    font-size: 48px;
+    color: black;
+}
+
+.tiktok-title h1 span {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    padding: 20px;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+
+.fade-in-tiktok-text.show{
+    opacity: 1;
+}
+
+
+.chart-container .bar-label {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+
+#artist-name-container {
+    height: 200px; /* Set the maximum height for the container */
+    overflow-y: scroll ; /* Enable vertical scrolling */
+}
+
+
+.pushable {
+    background: hsl(340deg 100% 32%);
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+.front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.track-names{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+
+.container-fluid {
+    margin-top: 0px;
+    height: 90%;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+    align-items: center;
+}
+
+
+.container-piano {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+#piano-title {
+    text-align: left;
+    margin-left: 72px;
+}
+
+#piano-title2 {
+    text-align: left;
+    font-size: 48px;
+    font-weight: bold;
+
+
+}
+
+#radar-title {
+    text-align: left;
+    font-size: 48px;
+    margin-top: 75px;
+    font-weight: bold;
+
+}
+
+#radar-info {
+    text-align: left;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+#radar-info2 {
+    text-align: left;
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+#histogram-title {
+    text-align: left;
+    font-size: 48px;
+    margin-top: 150px;
+    font-weight: bold;
+
+}
+
+#extraspace{
+    margin-top: 200px;
+}
+
+#histogram-info {
+    text-align: left;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+#scatter-title {
+    text-align: left;
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+.scatter-info {
+    text-align: left;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.piano-description {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#form {
+    margin-top: 10px;
+}
+
+#tiktok-text3\ bottom-text{
+    margin-bottom: 200px;
+}
+
+#searchArtist {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#searchButton {
+    background-color: #ff0050;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#searchButton:hover {
+    background-color: grey;
+}
+
+.button-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #333333;
+    font-size: 24px;
+}
+
+.button-container h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#button-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+label:hover {
+    background-color: #e0e0e0;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #ff0050;
+    color: white;
+}
+
+.radio-container {
+    margin-left: -10px;
+}
+
+
+#tiktokHist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: white;
+}
+
+#spotHist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: white;
+}
+#tikScatterDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: white;
+}
+
+#spotScatterDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: white;
+}
+
+.imagecontainer {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+}
+
+.bouncing-image {
+    position: absolute;
+    animation: animate 8s linear 0s infinite alternate;
+}
+
+/* https://stackoverflow.com/questions/22076732/move-image-around-browser-window-and-bounce-back-on-striking-side-wall */
+
+@keyframes animate {
+    0%, 100% {
+        left: calc(85% - 100px);
+    }
+    50% {
+        left: 0;
+    }
+}
+
+h3 {
+    color: black;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.wider {
+    margin-right: -60px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#spotifyradarchart,
+#tiktokradarchart {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.centered-subtext {
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.main-title {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.radar-title {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.left-bottom-image, .right-bottom-image {
+    position: absolute;
+    bottom: 0;
+    max-width: 275px
+}
+
+.left-bottom-image {
+    left: 0;
+}
+#right-music-note{
+    width:200px
+}
+
+.right-bottom-image {
+    right: 0;
+    margin-bottom: 10px;
+}
+
+#music-gif{
+    filter: grayscale(100%);
+    transform: scale(2.5);
+}
+
+#music-gif2{
+    filter: grayscale(100%);
+    transform: scale(2.5);
+    margin-bottom: 10px;
+
+}
+#spotify-gif{
+    transform: scale(.8);
+}
+
+#tiktok-gif{
+    transform: scale(.8);
+    margin-bottom: 20px;
+}
+
+.first-text {
+    margin-top: 20px;
+}
+.select-title{
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+.custom-select{
+    background-color: #ff0050;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.custom-select option:checked{
+    background-color: lightgrey;
+    color: white;
+}
+
+
+
+.container-frontpage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.category-button,
+.Xcategory-button,
+.Ycategory-button{
+    border: none;
+    font-size: 20px;
+    pointer-events: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff0050;
+    color: white;
+    transition: background-color 0.1s;
+}
+
+.category-button.selected,
+.Xcategory-button.selected,
+.Ycategory-button.selected{
+    background-color: #00f2ea;
+    color: black;
+}
+
+/*
+https://codepen.io/tystrong/pen/ewByaG
+
+
+ */
+
+
+.spotify-img,
+.tiktok-img {
+    z-index: 2;
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+
+}
+
+.bounce-tik {
+    animation: hori 4s linear alternate infinite,
+    verti 4s linear alternate infinite;
+    z-index: 1;
+
+}
+
+.bounce-tik2 {
+    animation: hori2 5s linear alternate infinite,
+    verti 5s linear alternate infinite;
+    z-index: 1;
+
+}
+
+.bounce-tik3 {
+    animation: hori3 7s linear alternate infinite,
+    verti 7s linear alternate infinite;
+    z-index: 1;
+
+}
+
+.bounce-spot {
+    animation: hori-spot 7s linear alternate infinite,
+    verti-spot 5s linear alternate infinite;
+    z-index: 1;
+}
+
+.bounce-spot2 {
+    animation: hori-spot2 5s linear alternate infinite,
+    verti-spot 5s linear alternate infinite;
+    z-index: 1;
+}
+
+.bounce-spot3 {
+    animation: hori-spot3 4s linear alternate infinite,
+    verti-spot 3s linear alternate infinite;
+    z-index: 1;
+}
+
+@keyframes verti {
+    from {
+        top: 5%;
+        transform: translateY(-50%);
+    }
+    to {
+        top: 95%;
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+@keyframes hori {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+@keyframes hori2 {
+    from {
+        left: 95%;
+    }
+    to {
+        left: 5%;
+    }
+}
+
+@keyframes hori3 {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+@keyframes verti-spot {
+    from {
+        top: 95%;
+        transform: translateY(-50%);
+    }
+    to {
+        top: 5%;
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+@keyframes hori-spot {
+    from {
+        left:95%;
+    }
+    to {
+        left: 5%;
+    }
+}
+
+@keyframes hori-spot2 {
+    from {
+        left:10%;
+    }
+    to {
+        left: 90%;
+    }
+}
+
+@keyframes hori-spot3 {
+    from {
+        left:75%;
+    }
+    to {
+        left: 45%;
+    }
+}
+
+
+
+
+#iphone {
+    z-index: 0;
+    width: 450px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+@keyframes iphoneAnimation {
+    75% {
+        bottom: 75%;
+    }
+
+    100% {
+        bottom: 95%;
+    }
+}
+
+.column.fixed-column {
+    position: sticky;
+    top: 20px;
+    height: 700px;
+    width: 375px;
+}
+
+.fade-in-tiktok-text {
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in-tiktok-text.show {
+    opacity: 1;
+}
+
+.image-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
